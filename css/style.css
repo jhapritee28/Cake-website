@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 85%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+body{
+  background: #F65A83;
+}
+
+section{
+  padding: 2rem 9%;
+}
+
+.heading{
+  text-align:center;
+  padding: 2rem 0;
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #000;
+}
+
+ .heading span{
+  background: pink ;
+  color: #000;
+  display: inline-block;
+  padding: .5rem 3rem;
+  clip-path: polygon(100% 0,93% 50%,100% 99%,0% 100%,7% 50%, 0% 0%);
+}
+
+.btn{
+  margin-top: 1rem;
+  display: inline-block;
+  padding: .8rem 3rem;
+  font-size: 1.7rem;
+  border-radius:.5rem ;
+  border: .2rem solid Black;
+  cursor: pointer;
+  text-decoration: none;
+  background: #eee;
+  color: #000;
+
+}
+
+.btn:hover{
+  color: pink;
+  background-color: #000;
+}
+
+
+
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  background: #fff;
+  box-shadow: 1px 10px #eee;
+}
+
+.header .logo{
+  font-size:1.5rem;
+  font-weight: bolder;
+  color: #000;
+}
+
+.header .logo i{
+  color: pink;
+}
+
+.header .navbar a{
+  font-size: 1rem;
+  margin: 0 1rem;
+  color: #000;
+}
+
+.header .navbar a:hover{
+  color: pink;
+}
+
+.header .icon div{
+  height: 1.5rem;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  border-radius: .8rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: pink;
+  margin-right: .3rem;
+}
+
+.header .icon div:hover{
+  color: #000;
+}
+
+#menu-btn{
+  display: none;
+}
+
+.header .search-form{
+  position: absolute;
+  top: 110%; right: -110%;
+  width: 35rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: .5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.header .search-form.active{
+  right: 2rem;
+  transition: linear;
+}
+
+.header .search-form input{
+  height: 100%;
+  width: 100%;
+  background: none;
+  font-size: 1rem;
+  color: #000;
+  padding: 0 1.5rem;
+}
+
+.header .search-form label{
+  font-size: 1.3rem;
+  padding-right: 1.5rem;
+  color: pink;
+  cursor: pointer;
+}
+
+.header .search-form label:hover{
+  color: #000;
+}
+
+.header .login-btn{
+  position: absolute;
+  top: 110%; right: -110%;
+  width: 30rem;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.header .login-btn.active{
+  right: 2rem;
+  transition: linear;
+}
+
+.header .login-btn h3{
+ font-size: 1rem;
+ text-transform: uppercase;
+ color: #000;
+}
+
+.header .shopping-cart{
+  position: absolute;
+  top: 100%; right: -110%;
+  padding: 1rem;
+  border-radius: .5rem;
+  max-height: 5rem;
+}
+
+.header .shopping-cart.active{
+  right: .5rem;
+  transition: linear;
+}
+
+.header .shopping-cart .box{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.header .shopping-cart .imgage{
+
+  width: 5rem;
+  height: 5rem;
+}
+
+.header .fa-trash{
+  font-size: 2rem;
+  background: white;
+  color: pink;
+  cursor: pointer;
+  top: 50%; right: 2rem;
+}
+
+.header .fa-trash:hover{
+  color: #000;
+}
+
+.header .contain h3{
+  color: Black;
+  padding-bottom: .5rem;
+  font-size: 1.2rem;
+}
+
+.header .contain span{
+  color: Black;
+  background: white;
+  font-size: 1rem;
+}
+
+.header .quantity{
+  padding-left: .9rem;
+}
+
+
+
+.Home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Image/background-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 17rem;
+  padding-bottom: 15rem;
+}
+
+.Home .contain{
+  text-align: center;
+  width: 60rem;
+}
+
+.Home .contain h3{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #000;
+}
+
+.Home .contain h3 span{
+  background: none;
+  color: pink;
+}
+
+.Home .contain p{
+  color: Black;
+  font-size: 1.8rem;
+  padding: 1rem 0 ;
+  line-height: 1.8rem;
+}
+
+.Features .box-container{
+
+    align-items: center;
+    gap:1.5rem;
+}
+
+.box-container .box{
+    padding:1.5rem 1rem;
+    background: #fff;
+    outline-offset: -1rem;
+    text-align: center;
+}
+
+.box img{
+    margin:1rem 0;
+
+}
+
+ .box h3{
+    font-size: 2rem;
+    line-height:1.8;
+    color:black;
+}
+
+ .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:grey;
+    padding:1rem 0;
+}
+
+.Products .product-slider{
+    padding:1rem;
+}
+
+.Products .product-slider:first-child{
+    margin-bottom: 2rem;
+}
+
+.product-slider .box{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding:3rem 2rem;
+    transition: .2s linear;
+}
+
+
+
+  .box .price{
+    font-size: 1.5rem;
+    color:grey;
+    padding:.5rem 0;
+}
+
+.star i{
+    font-size: 1.7rem;
+    color:orange;
+    padding:.5rem 0;
+}
+
+.share a{
+    height:2rem;
+    width:4rem;
+    line-height:2rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    color:black;
+    margin-right: .2rem;
+    background: #eee;
+    text-align: center;
+}
+
+.share a:hover{
+    background: pink;
+    color: #fff;
+}
+
+.box .links{
+    width: 100%;
+    margin:5rem 0;
+    padding:.8rem;
+    border-radius: 10rem;
+    background: #eee;
+    font-size: 1rem;
+    color:black;
+    text-transform: none;
+}
+
+
+
+.credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding:1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:black;
+
+}
+
+ .credit span{
+    color:pink;
+  }
+
+
+
+
+@media (max-width:991px) {
+
+  html{
+    font-size: 75%;
+  }
+  .header{
+    padding: 2rem;
+  }
+}
+
+section{
+  padding: 5rem;
+}
+
+@media (max-width:768px) {
+
+   #menu-btn{
+     display: inline-block;
+   }
+
+   .header.searchForm{
+     width: 90%;
+   }
+
+  .header .navbar{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 20rem;
+    background-color: #fff;
+  }
+
+.header .navbar.active{
+  right: 2rem;
+  transition: linear;
+}
+
+  .header .navbar a{
+    font-size: 1rem;
+    margin: 2rem 2.5rem;
+    display: block;
+  }
+}
+
+@media (max-width:450px) {
+
+  html{
+    font-size: 70%;
+  }
+  .heading{
+    font-size: 2.5rem;
+  }
+
+  .box img{
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+  }
+
+}
